@@ -1,6 +1,8 @@
 # JeniDub Developer Portfolio
 Welcome to the **JeniDub Developer Portfolio** project, a modern, responsive portfolio website created using **Next.js**, **React**, and **Tailwind CSS**.
 
+**Vercel Deployment Link:** https://portfolio-website-v2-g0yynurm9-jenidubs-projects.vercel.app/
+
 ## Features
 - **Responsive Design**: Fully responsive layout adapting to various screen sizes.
 - **Dark Mode**: Integrated light/dark mode toggle for a better user experience.
