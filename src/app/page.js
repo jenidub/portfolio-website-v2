@@ -2,8 +2,10 @@
 import { useState } from "react";
 
 import Head from "next/head";
+import Link from 'next/link';
+
 import {BsFillMoonStarsFill} from "react-icons/bs";
-import {AiFillLinkedin, AiFillYoutube} from "react-icons/ai";
+import {AiFillLinkedin, AiFillYoutube, AiFillGithub} from "react-icons/ai";
 
 import Image from "next/image";
 import deved from "../../public/dev-ed-wave.png"
@@ -35,7 +37,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill className="cursor-pointer text-xl" onClick={() => setDarkMode(!darkMode)}/>
               </li>
-              <li a className="bg-cyan-500 text-white px-4 py-2 rounded ml-8" href="#">Resume</li>
+              <li className="bg-cyan-500 text-white px-4 py-2 rounded ml-8" href="#">Resume</li>
             </ul>
           </nav>
           <div className="text-center p-10">
@@ -44,11 +46,18 @@ export default function Home() {
             <p className="text-medium py-5 leading-8 text-gray-800 max-w-xl mx-auto md:text-xl">Professional summary will be added here</p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <Link href="https://www.linkedin.com/in/jenidub/">
+              <AiFillLinkedin />
+            </Link>
+            <Link href="https://github.com/jenidub">
+              <AiFillGithub />
+            </Link>
+            <Link href="https://www.youtube.com/@jenidubca">
+              <AiFillYoutube />
+            </Link>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={deved}  layout="fill" objectFit="cover" alt="3D Porfolio Image of JeniDub"/>
+            <Image src={deved} alt="3D Porfolio Image of JeniDub" priority /> {/* replace layout=cover objectFit */}
           </div>
         </section>
         <section>
@@ -59,7 +68,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap dark:bg-white">
               <div className="basis-1/3 flex-1">
-                <Image src={web1} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive" alt=""/>
+                <Image src={web1} className="rounded-lg object-cover" width={"100%"} height={"100%"} alt=""/> {/* replace layout=responsive */}
               </div>
               <div className="basis-1/3 flex-1">
                 <Image src={web2} className="rounded-lg object-cover" width={"100%"} height={"100%"} alt=""/>

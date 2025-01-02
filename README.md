@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JeniDub Developer Portfolio
+Welcome to the **JeniDub Developer Portfolio** project, a modern, responsive portfolio website created using **Next.js**, **React**, and **Tailwind CSS**.
+
+## Features
+- **Responsive Design**: Fully responsive layout adapting to various screen sizes.
+- **Dark Mode**: Integrated light/dark mode toggle for a better user experience.
+- **Portfolio Showcase**: Dedicated sections to highlight projects and services.
+- **Social Media Integration**: Quick access to LinkedIn, GitHub, and YouTube profiles.
+
+## Technologies Used
+
+### Frontend
+- **Next.js**: Framework for server-rendered React applications.
+- **React**: Library for building interactive user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling.
+
+### Assets
+- **React Icons**: For scalable and customizable icons.
+- **Next.js Image Component**: Optimized image loading.
+
+## File Structure
+```
+├── public/
+│   ├── < list of images in the directory >
+│
+├── pages/
+│   └── index.js
+│
+├── components/
+│   └── (optional custom components can be added here)
+│
+├── styles/
+│   └── globals.css
+│
+└── package.json
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/jenidub-portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd jenidub-portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Application
+1. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+2. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Adding Projects
+- Update the `public/` folder with images of your projects.
+- Modify the `pages/index.js` file to include details about your projects.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Updating Services
+- Edit the service descriptions in the `pages/index.js` file under the `JeniDub Tech Consulting` section.
 
-## Learn More
+### Social Media Links
+- Update the icons and links to your social media profiles in the `pages/index.js` file.
 
-To learn more about Next.js, take a look at the following resources:
+## License
+This project is open-source and available under the [MIT License](LICENSE).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for checking out the JeniDub Developer Portfolio! If you have any suggestions or feedback, feel free to contribute or reach out.
